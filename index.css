@@ -1,0 +1,15 @@
+.header {
+    grid-area: header;
+    background-color: aquamarine;
+    color: black;
+}
+.nav {
+    grid-area: nav;
+    background-color: blueviolet;
+    padding: 10px;
+}
+.sidebar{
+    grid-area: main;
+    background-color: bisque;
+    padding: ;
+}

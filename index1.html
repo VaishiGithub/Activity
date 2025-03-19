@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="showalert()">Show alert</button>
+    <button onclick="askname()">promt for name</button>
+    <button onclick="confirmaction()">confirm</button>
+    <p id="output"></p>
+<script>
+    function showalert(){
+        alert("This is an alert box");
+    }
+    function askname(){
+        var name = prompt("What is your name?");
+        if(name !==null && name !==""){
+            document.getElementById("output").innerText = "Hello " + name + "! How are you today?";
+        }else{
+            document.getElementById("output").innerText = "you did not enter your name!";
+        }
+        
+    }
+    function confirmaction(){
+        let response=conform("Are you sure you want to proceed?");
+        if(response){
+            document.elementbyid().innerText = "You pressed OK!";
+        }else{
+            document.getElementById().innerText = "You pressed Cancel!";
+        }
+        // var r = confirm("Press a button");
+        // if(r == true){
+        //     alert("You pressed OK!");
+        // }else{
+        //     alert("You pressed Cancel!");
+        // }
+    }
+
+</script>
+
+</body>
+</html>
